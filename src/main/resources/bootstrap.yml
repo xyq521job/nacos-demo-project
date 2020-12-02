@@ -3,19 +3,19 @@ spring:
     nacos:
       #注册中心配置
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: 10.34.5.76:8848
         #namespace: b56f24a5-0af4-4aa6-8de5-d08bba30 #这边是对应专门的配置管理，若用的public则可以不用配置
       #配置中心
       config:
-        server-addr: 127.0.0.1:8848
+        server-addr: 10.34.5.76:8848
         #group: ${spring.application.name}
         file-extension: yaml  #第一次使用看到这里会觉得是手残多写了个a实则不是，这里对应的是云配置上面得文件格式
         #namespace: b56f24a5-0af4-4aa6-8de5-d08bba30 #同上
         name: nacos-demo-project
   application:
    name: nacos-demo-project
-#server:
-#  port: 8080
+server:
+  port: 8080
 
 management:
   endpoints:

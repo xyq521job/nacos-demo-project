@@ -14,7 +14,7 @@ import org.springframework.stereotype.Repository;
  * @since 2020-11-26
  */
 @Repository
-public interface TDataDictMapper extends BaseMapper<TDataDict> {
+public interface TDataDictMapper extends BaseMapper<TDataDict>{
 
     List<TDataDict> queryDataDictPagination();
 }
